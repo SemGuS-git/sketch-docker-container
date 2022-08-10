@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run --rm --name sketchbox --platform linux/amd64 --mount type=bind,source="$(pwd)",target="/root/sketch" wiley/sketch sketch "$@"
